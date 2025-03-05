@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fake Store Products</h1>
+        </header>
+
+        <div class="top-bar">
+            <input type="text" id="search" placeholder="Qidirish...">
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            <select id="category-filter">
+                <option value="all">Barcha kategoriyalar</option>
+                <option value="men's clothing">Erkaklar kiyimi</option>
+                <option value="women's clothing">Ayollar kiyimi</option>
+                <option value="jewelery">Zargarlik buyumlari</option>
+                <option value="electronics">Elektronika</option>
+            </select>
+            <select id="price-filter">
+                <option value="all">Barcha narxlar</option>
+                <option value="0-20">$0 - $20</option>
+                <option value="20-50">$20 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="100+">$100+</option>
+            </select>
+        </div>
+
+        <main id="products" class="product-container"></main>
+
+        <button id="open-modal">🛒 Xaridlarimni ko‘rish</button>
+
+        <div id="qr-code-modal" class="modal hidden">
+            <h2>Mening xaridlarim</h2>
+            <ul id="modal-cart-list"></ul>
+            <p id="modal-total-price">Umumiy summa: $0.00</p>
+            <button id="close-modal">Yopish</button>
+        </div>
+
+        <div class="spinner" id="spinner">🔄</div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
